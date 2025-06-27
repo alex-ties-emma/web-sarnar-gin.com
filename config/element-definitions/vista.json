@@ -1,0 +1,79 @@
+{
+    "highlighting": 0,
+    "hidden": 0,
+    "name": "Vista",
+    "description": "Vistaelement. Enth\u00e4lt einen Titel und einen Slider im Hintergrund.",
+    "handle": "vista",
+    "form": {
+        "fieldsets": [
+            {
+                "fieldsetId": "fs1",
+                "label": "",
+                "type": "standard",
+                "gridType": "grid-oneline"
+            }
+        ],
+        "fields": [
+            {
+                "fieldsetId": "fs1",
+                "valueKey": "headline",
+                "field": "textarea",
+                "label": "Titeltext"
+            },
+
+
+            {
+                "fieldsetId": "fs1",
+                "field": "input-text",
+                "label": "Title 1",
+                "valueKey": "title_1"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "input-text",
+                "label": "Title 2",
+                "valueKey": "title_2"
+            },
+
+
+            {
+                "fieldsetId": "fs1",
+                "field": "richtext",
+                "label": "Titeltext",
+                "valueKey": "text_1"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "richtext",
+                "label": "Titeltext",
+                "valueKey": "text_2"
+            },
+
+            {
+                "fieldsetId": "fs1",
+                "valueKey": "spacing_bottom",
+                "field": "select",
+                "label": "Abstand unten",
+                "options": [
+                    {
+                        "label": "Keiner",
+                        "value": ""
+                    },
+                    {
+                        "label": "Klein",
+                        "value": "eds-spacing-bottom--small"
+                    },
+                    {
+                        "label": "Medium",
+                        "value": "eds-spacing-bottom--medium"
+                    },
+                    {
+                        "label": "Gro\u00df",
+                        "value": "eds-spacing-bottom--large"
+                    }
+                ]
+            }
+        ]
+    },
+    "slide": false
+}

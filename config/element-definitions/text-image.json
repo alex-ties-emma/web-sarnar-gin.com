@@ -1,0 +1,97 @@
+{
+    "highlighting": 0,
+    "hidden": 0,
+    "name": "Text Image",
+    "description": "Text Image",
+    "handle": "text-image",
+    "form": {
+        "fieldsets": [
+            {
+                "fieldsetId": "fs1",
+                "label": "",
+                "type": "standard",
+                "gridType": "grid-oneline"
+            }
+        ],
+        "fields": [
+            {
+                "fieldsetId": "fs1",
+                "valueKey": "alignment",
+                "field": "select",
+                "label": "Image Alignment",
+                "options": [
+                    {
+                        "label": "Left",
+                        "value": "eds-text-image--align-v1"
+                    },
+                    {
+                        "label": "Right",
+                        "value": "eds-text-image--align-v2"
+                    }
+                ]
+            },
+            {
+                "fieldsetId": "fs1",
+                "valueKey": "decorations",
+                "field": "select",
+                "label": "Decorations",
+                "options": [
+                    {
+                        "label": "Left",
+                        "value": "eds-text-image--decorations-1"
+                    },
+                    {
+                        "label": "Right",
+                        "value": "eds-text-image--decorations-2"
+                    }
+                ]
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "image",
+                "label": "Bild",
+                "placeholder": "Bild",
+                "valueKey": "image"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "richtext",
+                "label": "Text",
+                "placeholder": "Text",
+                "valueKey": "richtext"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "pagelink",
+                "label": "Linkziel",
+                "placeholder": "Linkziel",
+                "valueKey": "link"
+            },
+            {
+                "fieldsetId": "fs1",
+                "valueKey": "spacing_bottom",
+                "field": "select",
+                "label": "Abstand unten",
+                "options": [
+                    {
+                        "label": "Keiner",
+                        "value": ""
+                    },
+                    {
+                        "label": "Klein",
+                        "value": "eds-spacing-bottom--small"
+                    },
+                    {
+                        "label": "Medium",
+                        "value": "eds-spacing-bottom--medium"
+                    },
+                    {
+                        "label": "Gro\u00df",
+                        "value": "eds-spacing-bottom--large"
+                    }
+                ]
+            }
+        ]
+    },
+    "slide": false
+}

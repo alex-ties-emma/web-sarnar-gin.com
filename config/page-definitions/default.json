@@ -1,0 +1,8 @@
+{
+    "@type": "page_definition",
+    "@id": "\/cms\/api\/page_definitions\/9309ddc6-8e7f-4819-900f-4753e4c8d11d",
+    "uuid": "9309ddc6-8e7f-4819-900f-4753e4c8d11d",
+    "handle": "default",
+    "form": [],
+    "description": "Default Page Template"
+}

@@ -1,0 +1,39 @@
+<div class="eds-footer">
+    <div class="eds-footer__wrapper">
+        <div class="eds-footer__logo">
+
+        </div>
+
+        <div class="eds-footer__links">
+
+            {% set footerItems = ["name", "mail", "phone", "address"] %}
+
+            {% for footerItem in footerItems %}
+                <div class="eds-footer__link">
+
+
+                    <div class="eds-footer__link-title">
+                        <span>{{ getConstant('label_' ~ footerItem) }}</span>
+                    </div>
+
+                    <a class="eds-footer__link-content" href="{{ getConstant('link_' ~ footerItem) }}">
+                        <span>{{ getConstant('content_' ~ footerItem) }}</span>
+                    </a>
+
+                </div>
+            {% endfor %}
+
+        </div>
+        <div class="eds-footer__socials">
+
+            <div class="eds-footer__socials-item">
+                <span class="eds-icon eds-icon--facebook"></span>
+            </div>
+            <div class="eds-footer__socials-item">
+                <span class="eds-icon eds-icon--instagram"></span>
+            </div>
+
+        </div>
+    </div>
+
+</div>

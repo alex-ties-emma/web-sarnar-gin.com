@@ -1,0 +1,45 @@
+<div class="eds-ingredients-gallery">
+    <div class="eds-ingredients-gallery__wrapper">
+
+        {% for item in content.items %}
+
+            <div class="eds-ingredients-gallery__item">
+
+                <div class="eds-ingredients-gallery__item-headline">
+                    <h2>
+                        <span>{{ item.headline }}</span>
+                    </h2>
+                </div>
+
+                <div class="eds-ingredients-gallery__item-image">
+
+                    {{ item.image|optimizeImage([
+                        {
+                            'imageWidth': '420',
+                            'mediaMinWidth': '320',
+                            'aspect_ratio': '9x16',
+                            'compression': '5'
+                        },
+                        {
+                            'imageWidth': '920',
+                            'mediaMinWidth': '700',
+                            'aspect_ratio': '9x16',
+                            'compression': '5'
+                        },
+                        {
+                            'imageWidth': '1224',
+                            'mediaMinWidth': '1024',
+                            'aspect_ratio': '9x16',
+                            'compression': '5'
+                        }
+                    ]) }}
+
+                </div>
+
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+</div>

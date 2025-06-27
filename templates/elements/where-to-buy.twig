@@ -1,0 +1,57 @@
+<div class="eds-where-to-buy">
+    <div class="eds-where-to-buy__wrapper">
+        <div class="eds-where-to-buy__image">
+            {{ content.image|optimizeImage([
+                {
+                    'imageWidth': '420',
+                    'mediaMinWidth': '320',
+                    'aspect_ratio': '4x3',
+                    'compression': '5'
+                },
+                {
+                    'imageWidth': '920',
+                    'mediaMinWidth': '700',
+                    'aspect_ratio': '4x3',
+                    'compression': '5'
+                },
+                {
+                    'imageWidth': '1224',
+                    'mediaMinWidth': '1024',
+                    'aspect_ratio': '16x10',
+                    'compression': '5'
+                },
+                {
+                    'imageWidth': '1400',
+                    'mediaMinWidth': '1224',
+                    'aspect_ratio': '16x10',
+                    'compression': '5'
+                }
+            ]) }}
+
+        </div>
+
+        <div class="eds-where-to-buy__content">
+
+            {% for item in content.items %}
+
+                <div class="eds-where-to-buy__item">
+
+                    <div class="eds-where-to-buy__deco"></div>
+
+                    <div class="eds-where-to-buy__content">
+                        <div class="eds-where-to-buy__title"><span>{{ item.title }}</span></div>
+                        <div class="eds-where-to-buy__description"><span>{{ item.description }}</span></div>
+                    </div>
+
+                </div>
+
+            {% endfor %}
+
+
+
+
+        </div>
+    </div>
+
+
+</div>

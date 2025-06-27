@@ -1,0 +1,36 @@
+@import 'variables/variables';
+
+@import "includes/fonts";
+@import "includes/icons";
+
+@import "includes/legal-menu";
+@import "includes/footer";
+@import "includes/header";
+@import "includes/fonts";
+
+@import 'variables/dimensions';
+
+body {
+  margin: 0;
+  font-size: 62.5%;
+  font-family: 'Funnel Display', sans-serif;
+}
+
+.eds-section-wrapper {
+  > :first-child {
+    &:not(.eds-vista) {
+      margin-top: 10em;
+    }
+  }
+}
+@media #{$mqMaxLaptop} {
+
+  body {
+    font-size: 56.25%;
+  }
+}
+@media #{$mqMaxTablet} {
+  body {
+    font-size: 56.25%;
+  }
+}

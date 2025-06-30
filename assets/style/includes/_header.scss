@@ -1,0 +1,77 @@
+.eds-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 2em;
+    margin-top: 2.5em !important;
+  }
+
+  &__logo {
+    width: 7em;
+    margin-right: 2em;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-left: 2em;
+
+    a {
+      text-decoration: none;
+
+      span {
+        color: white;
+        font-size: 2em;
+      }
+    }
+
+    .eds-header__separator {
+      color: #BE1824;
+      margin: 0 2em;
+      display: flex;
+      align-items: center;
+
+      .eds-icon {
+        font-size: 2em;
+      }
+    }
+  }
+
+  &__menu-toggle {
+    display: none;
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    width: 7em;
+
+    a {
+      width: 3.5em;
+      height: 3.5em;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+
+      span {
+        font-size: 1.6em;
+        color: #ffffff;
+      }
+
+
+      &:hover, &.eds-lang--active {
+        border: 1px solid #BE1824;
+      }
+    }
+  }
+}

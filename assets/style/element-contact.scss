@@ -1,0 +1,27 @@
+
+.eds-contact__header {
+  color: white;
+  font-family: 'Instrument Serif', serif;
+}
+
+.eds-contact__header span {
+  font-size: 4.5em;
+}
+
+.eds-contact__wrapper {
+  display: flex;
+}
+
+.eds-contact__content {
+  flex: 4;
+  padding: 0 2em;
+}
+
+.eds-contact__image {
+  flex: 5;
+}
+
+.eds-contact__image img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,39 @@
+
+.eds-ingredients-gallery__wrapper {
+  padding: 0 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  gap: 4em;
+  padding-bottom: 20em;
+  row-gap: 8em;
+}
+
+.eds-ingredients-gallery__item-image img {
+  width: 100%;
+  display: block;
+}
+
+.eds-ingredients-gallery__item-headline h2 span {
+  color: white;
+  font-size: 8em;
+  font-family: 'Instrument Serif', serif;
+  font-weight: normal;
+}
+
+.eds-ingredients-gallery__item-headline h2 {
+  font-size: inherit;
+  line-height: 1;
+}
+
+.eds-ingredients-gallery__item-headline {
+  margin-bottom: 3em;
+}
+
+
+
+.eds-ingredients-gallery__item:nth-child(3n + 2) {
+  transform: translateY(16em);
+}
+.eds-ingredients-gallery__item:nth-child(3n + 3) {
+  transform: translateY(8em);
+}

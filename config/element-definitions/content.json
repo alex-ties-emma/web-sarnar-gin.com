@@ -1,6 +1,18 @@
 {
+    "@type": "section_element_definition",
+    "@id": "\/cms\/api\/section_element_definitions\/ef56a93c-baf6-48c1-96ee-3ee139ea7c2f",
     "contentElementDefinitions": [
+        "\/cms\/api\/content_element_definitions\/ccf6dba8-b722-4b7b-b45d-8be0aeeeceeb",
+        "\/cms\/api\/content_element_definitions\/d1e2813c-8237-47ae-84f8-746a3e42c76e",
+        "\/cms\/api\/content_element_definitions\/0422e29a-80b7-4bc5-9b6a-4711c20ea279",
+        "\/cms\/api\/content_element_definitions\/b0b0cc62-37e3-4e3d-83e7-ab7a3b35db32",
+        "\/cms\/api\/content_element_definitions\/301e4e46-6372-4f27-bb89-9e93b0270785",
+        "\/cms\/api\/content_element_definitions\/5cae6f34-ced6-4987-91ae-daf06b0fae70",
+        "\/cms\/api\/content_element_definitions\/8fc9ee26-de5e-47d2-b4c7-a5ae59c54ea0",
+        "\/cms\/api\/content_element_definitions\/ad1ccdbe-3463-4ef6-a8dc-a05f50087e1b",
+        "\/cms\/api\/content_element_definitions\/9a97e33e-97d5-4ca6-848c-7aef4cf99e24"
     ],
+    "uuid": "ef56a93c-baf6-48c1-96ee-3ee139ea7c2f",
     "highlighting": 0,
     "hidden": 0,
     "name": "Hauptinhalt",

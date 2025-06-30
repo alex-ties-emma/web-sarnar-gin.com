@@ -1,79 +1,78 @@
 {
-  "highlighting": 0,
-  "hidden": 0,
-  "name": "Ingredients Gallery",
-  "description": "Ingredients Gallery",
-  "handle": "ingredients-gallery",
-  "form": {
-    "fieldsets": [
-      {
-        "fieldsetId": "fs1",
-        "label": "",
-        "type": "standard",
-        "gridType": "grid-oneline"
-      }
-    ],
-    "fields": [
-
-
-      {
-        "fieldsetId": "fs1",
-        "field": "subform",
-        "label": "Items",
-        "valueKey": "items",
-        "subform": {
-          "fieldsets": [
+    "@type": "content_element_definition",
+    "@id": "\/cms\/api\/content_element_definitions\/301e4e46-6372-4f27-bb89-9e93b0270785",
+    "uuid": "301e4e46-6372-4f27-bb89-9e93b0270785",
+    "highlighting": 0,
+    "hidden": 0,
+    "name": "Ingredients Gallery",
+    "description": "Ingredients Gallery",
+    "handle": "ingredients-gallery",
+    "form": {
+        "fieldsets": [
             {
-              "fieldsetId": "fs1",
-              "label": "",
-              "type": "standard",
-              "gridType": "grid-oneline"
+                "fieldsetId": "fs1",
+                "label": "",
+                "type": "standard",
+                "gridType": "grid-oneline"
             }
-          ],
-          "fields": [
+        ],
+        "fields": [
             {
-              "fieldsetId": "fs1",
-              "field": "image",
-              "label": "Bild",
-              "placeholder": "Bild",
-              "valueKey": "image"
+                "fieldsetId": "fs1",
+                "field": "subform",
+                "label": "Items",
+                "valueKey": "items",
+                "subform": {
+                    "fieldsets": [
+                        {
+                            "fieldsetId": "fs1",
+                            "label": "",
+                            "type": "standard",
+                            "gridType": "grid-oneline"
+                        }
+                    ],
+                    "fields": [
+                        {
+                            "fieldsetId": "fs1",
+                            "field": "image",
+                            "label": "Bild",
+                            "placeholder": "Bild",
+                            "valueKey": "image"
+                        },
+                        {
+                            "fieldsetId": "fs1",
+                            "field": "input-text",
+                            "label": "Title",
+                            "valueKey": "title"
+                        }
+                    ]
+                }
             },
             {
-              "fieldsetId": "fs1",
-              "field": "input-text",
-              "label": "Headline",
-              "valueKey": "headline"
+                "fieldsetId": "fs1",
+                "valueKey": "spacing_bottom",
+                "field": "select",
+                "label": "Abstand unten",
+                "options": [
+                    {
+                        "label": "Keiner",
+                        "value": ""
+                    },
+                    {
+                        "label": "Klein",
+                        "value": "eds-spacing-bottom--small"
+                    },
+                    {
+                        "label": "Medium",
+                        "value": "eds-spacing-bottom--medium"
+                    },
+                    {
+                        "label": "Gro\u00df",
+                        "value": "eds-spacing-bottom--large"
+                    }
+                ]
             }
-          ]
-        }
-      },
-
-
-      {
-        "fieldsetId": "fs1",
-        "valueKey": "spacing_bottom",
-        "field": "select",
-        "label": "Abstand unten",
-        "options": [
-          {
-            "label": "Keiner",
-            "value": ""
-          },
-          {
-            "label": "Klein",
-            "value": "eds-spacing-bottom--small"
-          },
-          {
-            "label": "Medium",
-            "value": "eds-spacing-bottom--medium"
-          },
-          {
-            "label": "Gro\u00df",
-            "value": "eds-spacing-bottom--large"
-          }
         ]
-      }
-    ]
-  },
-  "slide": false
+    },
+    "slide": false
 }

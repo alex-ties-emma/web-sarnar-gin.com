@@ -1,84 +1,84 @@
 {
-  "highlighting": 0,
-  "hidden": 0,
-  "name": "Ingredients Gallery",
-  "description": "Ingredients Gallery",
-  "handle": "ingredients-gallery",
-  "form": {
-    "fieldsets": [
-      {
-        "fieldsetId": "fs1",
-        "label": "",
-        "type": "standard",
-        "gridType": "grid-oneline"
-      }
-    ],
-    "fields": [
-
-      {
-        "fieldsetId": "fs1",
-        "field": "image",
-        "label": "Bild",
-        "placeholder": "Bild",
-        "valueKey": "image"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "subform",
-        "label": "Items",
-        "valueKey": "items",
-        "subform": {
-          "fieldsets": [
+    "@type": "content_element_definition",
+    "@id": "\/cms\/api\/content_element_definitions\/9a97e33e-97d5-4ca6-848c-7aef4cf99e24",
+    "uuid": "9a97e33e-97d5-4ca6-848c-7aef4cf99e24",
+    "highlighting": 0,
+    "hidden": 0,
+    "name": "Where to Buy",
+    "description": "Where to Buy",
+    "handle": "where-to-buy",
+    "form": {
+        "fieldsets": [
             {
-              "fieldsetId": "fs1",
-              "label": "",
-              "type": "standard",
-              "gridType": "grid-oneline"
+                "fieldsetId": "fs1",
+                "label": "",
+                "type": "standard",
+                "gridType": "grid-oneline"
             }
-          ],
-          "fields": [
+        ],
+        "fields": [
             {
-              "fieldsetId": "fs1",
-              "field": "input-text",
-              "label": "Title",
-              "valueKey": "title"
+                "fieldsetId": "fs1",
+                "field": "image",
+                "label": "Bild",
+                "placeholder": "Bild",
+                "valueKey": "image"
             },
             {
-              "fieldsetId": "fs1",
-              "field": "input-text",
-              "label": "Description",
-              "valueKey": "description"
+                "fieldsetId": "fs1",
+                "field": "subform",
+                "label": "Items",
+                "valueKey": "items",
+                "subform": {
+                    "fieldsets": [
+                        {
+                            "fieldsetId": "fs1",
+                            "label": "",
+                            "type": "standard",
+                            "gridType": "grid-oneline"
+                        }
+                    ],
+                    "fields": [
+                        {
+                            "fieldsetId": "fs1",
+                            "field": "input-text",
+                            "label": "Title",
+                            "valueKey": "title"
+                        },
+                        {
+                            "fieldsetId": "fs1",
+                            "field": "input-text",
+                            "label": "Description",
+                            "valueKey": "description"
+                        }
+                    ]
+                }
+            },
+            {
+                "fieldsetId": "fs1",
+                "valueKey": "spacing_bottom",
+                "field": "select",
+                "label": "Abstand unten",
+                "options": [
+                    {
+                        "label": "Keiner",
+                        "value": ""
+                    },
+                    {
+                        "label": "Klein",
+                        "value": "eds-spacing-bottom--small"
+                    },
+                    {
+                        "label": "Medium",
+                        "value": "eds-spacing-bottom--medium"
+                    },
+                    {
+                        "label": "Gro\u00df",
+                        "value": "eds-spacing-bottom--large"
+                    }
+                ]
             }
-          ]
-        }
-      },
-
-
-      {
-        "fieldsetId": "fs1",
-        "valueKey": "spacing_bottom",
-        "field": "select",
-        "label": "Abstand unten",
-        "options": [
-          {
-            "label": "Keiner",
-            "value": ""
-          },
-          {
-            "label": "Klein",
-            "value": "eds-spacing-bottom--small"
-          },
-          {
-            "label": "Medium",
-            "value": "eds-spacing-bottom--medium"
-          },
-          {
-            "label": "Gro\u00df",
-            "value": "eds-spacing-bottom--large"
-          }
         ]
-      }
-    ]
-  },
-  "slide": false
+    },
+    "slide": false
 }

@@ -1,0 +1,31 @@
+{
+  "labels": {
+    "privacy": "Con la presente accetto l'informativa sulla privacy.",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Email",
+    "phone": "Tel.",
+    "comment": "Sono interessato al software e/o vorrei richiedere una presentazione.",
+    "send": "Contatta venditore",
+    "sending": "La richiesta viene inviata.",
+    "request": "Richiedi",
+    "success": "La richiesta è stata inviata.",
+    "error": "Sfortunatamente, c'è stato un problema durante l'elaborazione della tua richiesta! Ti preghiamo di riprovare o di scrivermi direttamente alla mia email!",
+    "public_administration": "Pubblica amministrazione",
+    "organization": "Organizzazione/Azienda",
+    "private": "Persona privata"
+  },
+  "errors": {
+    "privacy": "L'informativa sulla privacy deve essere accettata.",
+    "firstName": "Nome è un campo obbligatorio.",
+    "lastName": "Cognome è un campo obbligatorio.",
+    "email": "L'Email è un campo obbligatorio.",
+    "phone": "Tel. è un campo obbligatorio.",
+    "comment": "",
+    "send": ""
+  },
+  "interest": {
+    "buy": "Vorrei acquistare",
+    "sell": "Vorrei vendere"
+  }
+}

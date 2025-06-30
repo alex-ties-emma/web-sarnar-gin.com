@@ -4,5 +4,8 @@
     "uuid": "9309ddc6-8e7f-4819-900f-4753e4c8d11d",
     "handle": "default",
     "form": [],
-    "description": "Default Page Template"
+    "description": "Default Page Template",
+    "sectionElementDefinitions": [
+        "\/cms\/api\/section_element_definitions\/ef56a93c-baf6-48c1-96ee-3ee139ea7c2f"
+    ]
 }

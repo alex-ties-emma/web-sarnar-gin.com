@@ -1,20 +1,26 @@
 <div class="eds-vista">
-    <div class="eds-vista__hero-wrapper">
+    <div class="eds-vista__hero-wrapper eds-width--c10">
 
         <div class="eds-vista__hero-text">
+            {% for line in content.headline|split('<br>') %}
 
+            <div class="eds-vista__hero-line">
+                <span>{{ line|replace({'Gin': '<b>Gin</b>'})|raw }}</span>
+            </div>
+
+            {% endfor %}
         </div>
 
         <div class="eds-vista__hero-image">
 
-
+            <img src="/assets/bottle-gin.png" />
 
         </div>
 
 
     </div>
 
-    <div class="eds-vista__intro-wrapper">
+    <div class="eds-vista__intro-wrapper eds-width--c12">
 
 
         <div class="eds-vista__intro-text">

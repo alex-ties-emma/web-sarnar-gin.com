@@ -1,6 +1,6 @@
 <?php
-use Attemic\Web\Core\AttemicWeb;
-use Attemic\Web\Core\Manager\CacheManager;
+
+use MadeByEmma\Web\Core\MadeByEmmaWeb;
 
 require_once __DIR__ . '/../vendor/autoload.php';
-new AttemicWeb();
+new MadeByEmmaWeb();

@@ -1,131 +1,134 @@
 {
-  "layer": 2,
-  "highlighting": 0,
-  "hidden": 0,
-  "name": "All fields",
-  "description": "List of all fields",
-  "handle": "boilerplate",
-  "form": {
-    "fieldsets": [
-      {
-        "fieldsetId": "fs1",
-        "label": "",
-        "type": "standard",
-        "gridType": "grid-oneline"
-      }
-    ],
-    "fields": [
-      {
-        "fieldsetId": "fs1",
-        "field": "image",
-        "label": "Bild",
-        "placeholder": "Bild",
-        "valueKey": "image"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "rich-images",
-        "label": "Bilder",
-        "placeholder": "Bilder",
-        "valueKey": "richimages"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "images",
-        "label": "Bilder",
-        "placeholder": "Bilder",
-        "valueKey": "images"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "input-number",
-        "label": "Nummer",
-        "placeholder": "Nummer",
-        "valueKey": "number"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "input-text",
-        "label": "Text",
-        "placeholder": "Text",
-        "valueKey": "text"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "pagelink",
-        "label": "Linkziel",
-        "placeholder": "Linkziel",
-        "valueKey": "link"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "richtext",
-        "label": "Text",
-        "placeholder": "Text",
-        "valueKey": "richtext"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "textarea",
-        "label": "Text",
-        "placeholder": "Text",
-        "valueKey": "textarea"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "switch",
-        "label": "Switch",
-        "placeholder": "Switch",
-        "valueKey": "switch"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "toggle-choice",
-        "label": "Ein- Aus",
-        "placeholder": "Ein- Aus",
-        "valueKey": "togglechoice"
-      },
-      {
-        "fieldsetId": "fs1",
-        "field": "select",
-        "label": "Auswahl",
-        "valueKey": "switch",
-        "options": [
-          {
-            "label": "M\u00f6glichkeit 1",
-            "value": "1"
-          },
-          {
-            "label": "M\u00f6glichkeit 2",
-            "value": "2"
-          },
-          {
-            "label": "M\u00f6glichkeit 3",
-            "value": "3"
-          }
+    "@type": "content_element_definition",
+    "@id": "\/cms\/api\/content_element_definitions\/ef82bb59-dd5d-4d15-acaa-d6823a64b3c0",
+    "uuid": "ef82bb59-dd5d-4d15-acaa-d6823a64b3c0",
+    "highlighting": 0,
+    "hidden": 0,
+    "name": "All fields",
+    "description": "List of all fields",
+    "handle": "boilerplate",
+    "form": {
+        "fieldsets": [
+            {
+                "fieldsetId": "fs1",
+                "label": "",
+                "type": "standard",
+                "gridType": "grid-oneline"
+            }
+        ],
+        "fields": [
+            {
+                "fieldsetId": "fs1",
+                "field": "image",
+                "label": "Bild",
+                "placeholder": "Bild",
+                "valueKey": "image"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "rich-images",
+                "label": "Bilder",
+                "placeholder": "Bilder",
+                "valueKey": "richimages"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "images",
+                "label": "Bilder",
+                "placeholder": "Bilder",
+                "valueKey": "images"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "input-number",
+                "label": "Nummer",
+                "placeholder": "Nummer",
+                "valueKey": "number"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "input-text",
+                "label": "Text",
+                "placeholder": "Text",
+                "valueKey": "text"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "pagelink",
+                "label": "Linkziel",
+                "placeholder": "Linkziel",
+                "valueKey": "link"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "richtext",
+                "label": "Text",
+                "placeholder": "Text",
+                "valueKey": "richtext"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "textarea",
+                "label": "Text",
+                "placeholder": "Text",
+                "valueKey": "textarea"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "switch",
+                "label": "Switch",
+                "placeholder": "Switch",
+                "valueKey": "switch"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "toggle-choice",
+                "label": "Ein- Aus",
+                "placeholder": "Ein- Aus",
+                "valueKey": "togglechoice"
+            },
+            {
+                "fieldsetId": "fs1",
+                "field": "select",
+                "label": "Auswahl",
+                "valueKey": "switch",
+                "options": [
+                    {
+                        "label": "M\u00f6glichkeit 1",
+                        "value": "1"
+                    },
+                    {
+                        "label": "M\u00f6glichkeit 2",
+                        "value": "2"
+                    },
+                    {
+                        "label": "M\u00f6glichkeit 3",
+                        "value": "3"
+                    }
+                ]
+            },
+            {
+                "handle": "test",
+                "field": "select-multiple",
+                "fieldsetId": "fs1",
+                "label": "Mehrfachauswahl",
+                "valueKey": "switchmultiple",
+                "items": [
+                    {
+                        "label": "M\u00f6glichkeit 1",
+                        "value": "1"
+                    },
+                    {
+                        "label": "M\u00f6glichkeit 2",
+                        "value": "2"
+                    },
+                    {
+                        "label": "M\u00f6glichkeit 3",
+                        "value": "3"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "handle": "test",
-        "field": "select-multiple",
-        "fieldsetId": "fs1",
-        "label": "Mehrfachauswahl",
-        "valueKey": "switchmultiple",
-        "items": [
-          {
-            "label": "M\u00f6glichkeit 1",
-            "value": "1"
-          },
-          {
-            "label": "M\u00f6glichkeit 2",
-            "value": "2"
-          },
-          {
-            "label": "M\u00f6glichkeit 3",
-            "value": "3"
-          }
-        ]
-      }
-    ]
-  }
+    },
+    "slide": false
 }

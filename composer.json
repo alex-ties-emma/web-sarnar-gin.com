@@ -12,24 +12,24 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:madebyemma/eds-web-core.git"
+      "url": "git@github.com:alex-ties-emma/web-core.git"
     },
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:madebyemma/eds-web-communicator.git"
+      "url": "git@github.com:alex-ties-emma/web-communicator.git"
     },
     {
       "type": "vcs",
-      "url": "git@bitbucket.org:madebyemma/eds-web-cms.git"
+      "url": "git@github.com:alex-ties-emma/web-cms.git"
     }
   ],
   "require": {
     "php": "^8.0",
-    "madebyemma/web-core": "5.0.*",
-    "madebyemma/web-communicator": "5.0.*"
+    "madebyemma/web-core": "@dev",
+    "madebyemma/web-communicator": "@dev"
   },
   "require-dev": {
-    "madebyemma/web-cms": "5.0.*"
+    "madebyemma/web-cms": "@dev"
   },
   "scripts": {
     "db:migrate": "cd vendor/madebyemma/web-core/config && php ../../../../vendor/bin/doctrine-migrations migrate --no-interaction",

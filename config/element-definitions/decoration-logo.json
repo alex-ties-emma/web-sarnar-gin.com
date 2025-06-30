@@ -1,44 +1,47 @@
 {
-  "highlighting": 0,
-  "hidden": 0,
-  "name": "Decoration Logo",
-  "description": "Decoration Logo",
-  "handle": "decoration-logo",
-  "form": {
-    "fieldsets": [
-      {
-        "fieldsetId": "fs1",
-        "label": "",
-        "type": "standard",
-        "gridType": "grid-oneline"
-      }
-    ],
-    "fields": [
-      {
-        "fieldsetId": "fs1",
-        "valueKey": "spacing_bottom",
-        "field": "select",
-        "label": "Abstand unten",
-        "options": [
-          {
-            "label": "Keiner",
-            "value": ""
-          },
-          {
-            "label": "Klein",
-            "value": "eds-spacing-bottom--small"
-          },
-          {
-            "label": "Medium",
-            "value": "eds-spacing-bottom--medium"
-          },
-          {
-            "label": "Gro\u00df",
-            "value": "eds-spacing-bottom--large"
-          }
+    "@type": "content_element_definition",
+    "@id": "\/cms\/api\/content_element_definitions\/0422e29a-80b7-4bc5-9b6a-4711c20ea279",
+    "uuid": "0422e29a-80b7-4bc5-9b6a-4711c20ea279",
+    "highlighting": 0,
+    "hidden": 0,
+    "name": "Decoration Logo",
+    "description": "Decoration Logo",
+    "handle": "decoration-logo",
+    "form": {
+        "fieldsets": [
+            {
+                "fieldsetId": "fs1",
+                "label": "",
+                "type": "standard",
+                "gridType": "grid-oneline"
+            }
+        ],
+        "fields": [
+            {
+                "fieldsetId": "fs1",
+                "valueKey": "spacing_bottom",
+                "field": "select",
+                "label": "Abstand unten",
+                "options": [
+                    {
+                        "label": "Keiner",
+                        "value": ""
+                    },
+                    {
+                        "label": "Klein",
+                        "value": "eds-spacing-bottom--small"
+                    },
+                    {
+                        "label": "Medium",
+                        "value": "eds-spacing-bottom--medium"
+                    },
+                    {
+                        "label": "Gro\u00df",
+                        "value": "eds-spacing-bottom--large"
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  },
-  "slide": false
+    },
+    "slide": false
 }

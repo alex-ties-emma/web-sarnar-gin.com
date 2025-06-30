@@ -1,0 +1,30 @@
+
+.eds-panorama__wrapper {
+  display: flex;
+}
+
+.eds-panorama__image {
+  aspect-ratio: 9 / 16;
+}
+
+.eds-panorama__content {
+  margin: 5em 0;
+}
+
+.eds-panorama__text {
+  margin: 3em 0;
+}
+
+.eds-panorama__deco {
+  color: #BE1824;
+}
+
+.eds-panorama__deco .eds-icon {
+  font-size: 2em;
+}
+
+.eds-panorama__deco {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10em;
+}

@@ -1,0 +1,51 @@
+
+.eds-footer__socials {
+  display: flex;
+  gap: 1.2em;
+  margin-left: 2em;
+}
+
+.eds-footer__socials-item {
+  width: 3.6em;
+  height: 3.6em;
+  border: 1px solid #BE1824;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.eds-footer__socials-item .eds-icon {
+  font-size: 2em;
+}
+
+.eds-footer__wrapper {
+  padding: 2em 2em 4em;
+  display: flex;
+}
+
+.eds-footer__links {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2em;
+  color: white;
+  margin: 1em 0;
+}
+
+.eds-footer__logo {
+  margin-right: 2em;
+}
+
+.eds-footer__link-title span {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.eds-footer__link-content {
+  color: white;
+  font-size: 1.8em;
+  text-decoration: none;
+}

@@ -1,50 +1,53 @@
 {
-  "highlighting": 0,
-  "hidden": 0,
-  "name": "Dividing Title",
-  "description": "Dividing Title",
-  "handle": "dividing-title",
-  "form": {
-    "fieldsets": [
-      {
-        "fieldsetId": "fs1",
-        "label": "",
-        "type": "standard",
-        "gridType": "grid-oneline"
-      }
-    ],
-    "fields": [
-      {
-        "fieldsetId": "fs1",
-        "field": "input-text",
-        "label": "Headline",
-        "valueKey": "headline"
-      },
-      {
-        "fieldsetId": "fs1",
-        "valueKey": "spacing_bottom",
-        "field": "select",
-        "label": "Abstand unten",
-        "options": [
-          {
-            "label": "Keiner",
-            "value": ""
-          },
-          {
-            "label": "Klein",
-            "value": "eds-spacing-bottom--small"
-          },
-          {
-            "label": "Medium",
-            "value": "eds-spacing-bottom--medium"
-          },
-          {
-            "label": "Gro\u00df",
-            "value": "eds-spacing-bottom--large"
-          }
+    "@type": "content_element_definition",
+    "@id": "\/cms\/api\/content_element_definitions\/b0b0cc62-37e3-4e3d-83e7-ab7a3b35db32",
+    "uuid": "b0b0cc62-37e3-4e3d-83e7-ab7a3b35db32",
+    "highlighting": 0,
+    "hidden": 0,
+    "name": "Dividing Title",
+    "description": "Dividing Title",
+    "handle": "dividing-title",
+    "form": {
+        "fieldsets": [
+            {
+                "fieldsetId": "fs1",
+                "label": "",
+                "type": "standard",
+                "gridType": "grid-oneline"
+            }
+        ],
+        "fields": [
+            {
+                "fieldsetId": "fs1",
+                "field": "input-text",
+                "label": "Headline",
+                "valueKey": "headline"
+            },
+            {
+                "fieldsetId": "fs1",
+                "valueKey": "spacing_bottom",
+                "field": "select",
+                "label": "Abstand unten",
+                "options": [
+                    {
+                        "label": "Keiner",
+                        "value": ""
+                    },
+                    {
+                        "label": "Klein",
+                        "value": "eds-spacing-bottom--small"
+                    },
+                    {
+                        "label": "Medium",
+                        "value": "eds-spacing-bottom--medium"
+                    },
+                    {
+                        "label": "Gro\u00df",
+                        "value": "eds-spacing-bottom--large"
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  },
-  "slide": false
+    },
+    "slide": false
 }

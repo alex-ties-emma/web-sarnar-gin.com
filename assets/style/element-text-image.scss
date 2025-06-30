@@ -1,0 +1,56 @@
+
+.eds-text-image__decorations {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+
+.eds-text-image__decorations .eds-icon {
+  font-size: 2em;
+}
+
+.eds-text-image__decorations .eds-icon--croce {
+  color: #BE1824;
+}
+
+.eds-text-image--align-v2 .eds-text-image__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+}
+
+.eds-text-image__wrapper {
+  display: flex;
+}
+
+.eds-text-image__content {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.eds-text-image__image {
+  flex: 5;
+}
+
+.eds-text-image__image img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.eds-text-image__text-wrapper {
+  padding: 4.5em 0;
+  text-align: center;
+  font-family: 'Instrument Serif', serif;
+  max-width: 45em;
+}
+
+.eds-text-image__text-wrapper p {
+  font-size: 4.5em;
+  max-width: 45em;
+}

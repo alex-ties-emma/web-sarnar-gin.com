@@ -1,0 +1,72 @@
+
+.eds-vista__hero-wrapper {
+  padding: 25em 0;
+  height: 40em;
+  box-sizing: content-box;
+  display: flex;
+}
+
+.eds-vista__hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eds-vista__hero-image {
+  flex: 1;
+}
+
+.eds-vista__hero-line span {
+  font-size: 9em;
+  color: white;
+  font-family: 'Instrument Serif', sans-serif;
+}
+
+.eds-vista__hero-line span b {
+  font-weight: inherit;
+  color: #BE1824;
+}
+
+.eds-vista__hero-line {
+  line-height: 1.2;
+}
+
+
+.eds-vista__intro-text {
+  flex: 1;
+  height: 76em;
+  display: flex;
+  flex-direction: column;
+}
+
+.eds-vista__intro-spacer {
+  flex: 1;
+}
+
+.eds-vista__intro-wrapper {
+  color: white;
+  display: flex;
+  padding: 0 2em;
+}
+
+.eds-vista__intro-text-container {
+}
+
+.eds-vista__intro-text-headline h2 span {
+  font-family: 'Instrument Serif', serif;
+  font-weight: normal;
+  font-size: 9em;
+}
+
+.eds-vista__intro-text-headline h2 {
+  font-size: inherit;
+}
+
+.eds-vista__intro-text-container p {
+  font-size: 2.5em;
+}
+
+.eds-vista__intro-text:nth-child(1) .eds-vista__intro-text-headline {
+  margin-top: auto;
+}

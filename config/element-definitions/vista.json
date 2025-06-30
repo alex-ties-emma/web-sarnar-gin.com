@@ -1,4 +1,7 @@
 {
+    "@type": "content_element_definition",
+    "@id": "\/cms\/api\/content_element_definitions\/ad1ccdbe-3463-4ef6-a8dc-a05f50087e1b",
+    "uuid": "ad1ccdbe-3463-4ef6-a8dc-a05f50087e1b",
     "highlighting": 0,
     "hidden": 0,
     "name": "Vista",
@@ -20,8 +23,6 @@
                 "field": "textarea",
                 "label": "Titeltext"
             },
-
-
             {
                 "fieldsetId": "fs1",
                 "field": "input-text",
@@ -34,8 +35,6 @@
                 "label": "Title 2",
                 "valueKey": "title_2"
             },
-
-
             {
                 "fieldsetId": "fs1",
                 "field": "richtext",
@@ -48,7 +47,6 @@
                 "label": "Titeltext",
                 "valueKey": "text_2"
             },
-
             {
                 "fieldsetId": "fs1",
                 "valueKey": "spacing_bottom",

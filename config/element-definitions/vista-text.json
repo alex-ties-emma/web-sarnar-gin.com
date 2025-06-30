@@ -1,4 +1,7 @@
 {
+    "@type": "content_element_definition",
+    "@id": "\/cms\/api\/content_element_definitions\/8fc9ee26-de5e-47d2-b4c7-a5ae59c54ea0",
+    "uuid": "8fc9ee26-de5e-47d2-b4c7-a5ae59c54ea0",
     "highlighting": 0,
     "hidden": 0,
     "name": "Vista Text",

@@ -1,7 +1,20 @@
-<div class="eds-text-image {{ content.alignment }} eds-padding--medium {{ content.spacing_bottom }}">
+<div class="eds-text-image {{ content.alignment }} {{ content.spacing_bottom }} eds-width--full">
     <div class="eds-text-image__wrapper">
         <div class="eds-text-image__content eds-width--c5">
-            <a class="eds-text-image__text-wrapper"  href="{{ generateLink(content.link) }}">
+            <a class="eds-text-image__text-wrapper"
+                {{ content.link ? 'href="' ~ generateLink(content.link) ~ '"' : '' }}
+            >
+                {% if content.decorations == 'eds-text-image--decorations-1' %}
+                    <div class="eds-text-image__decorations">
+                        <span class="eds-icon eds-icon--croce"></span>
+                    </div>
+                {% endif %}
+
+                {% if content.decorations == 'eds-text-image--decorations-2' %}
+                    <div class="eds-text-image__decorations">
+                        <span class="eds-icon eds-icon--greca-text"></span>
+                    </div>
+                {% endif %}
 
 {#                <div class="eds-text-image__headline eds-headline-v2">#}
 {#                    {{ content.headline|formatHeadline }}#}
@@ -15,6 +28,19 @@
 {#                        <span>{{ content.label }}</span>#}
 {#                    </a>#}
 {#                </div>#}
+
+                {% if content.decorations == 'eds-text-image--decorations-1' %}
+                    <div class="eds-text-image__decorations">
+                        <span class="eds-icon eds-icon--croce"></span>
+                    </div>
+                {% endif %}
+
+                {% if content.decorations == 'eds-text-image--decorations-2' %}
+                    <div class="eds-text-image__decorations">
+                        <span class="eds-icon eds-icon--greca-text"></span>
+                    </div>
+                {% endif %}
+
             </a>
 
         </div>
@@ -35,13 +61,13 @@
                     {
                         'imageWidth': '1224',
                         'mediaMinWidth': '1024',
-                        'aspect_ratio': '16x10',
+                        'aspect_ratio': '1x1',
                         'compression': '5'
                     },
                     {
                         'imageWidth': '1400',
                         'mediaMinWidth': '1224',
-                        'aspect_ratio': '16x10',
+                        'aspect_ratio': '1x1',
                         'compression': '5'
                     }
                 ]) }}

@@ -1,0 +1,31 @@
+{
+  "labels": {
+    "privacy": "Hiermit akzeptiere ich die Datenschutzerklärung",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Tel.",
+    "comment": "Ich bin an Ihrem Angebot interessiert und würde gerne einen Termin vereinbaren.",
+    "send": "Verkäufer kontaktieren",
+    "sending": "Anfrage wird versendet...",
+    "request": "Unverbindlich anfragen",
+    "success": "Die Anfrage wurde gesendet.",
+    "error": "Leider gab es ein Problem bei der Verarbeitung deiner Anfrage! Bitte versuche es erneut oder schreib mir direkt an meine E-Mail!",
+    "public_administration": "Öffentliche Verwaltung",
+    "organization": "Organisation",
+    "private": "Privatperson"
+  },
+  "errors": {
+    "privacy": "Die Datenschutzerklärung muss akzeptiert werden.",
+    "firstName": "Vorname ist ein Pflichtfeld.",
+    "lastName": "Nachname ist ein Pflichtfeld.",
+    "email": "E-Mail ist ein Pflichtfeld.",
+    "phone": "Ihre Telefonnummer ist ein Pflichtfeld.",
+    "comment": "",
+    "send": ""
+  },
+  "interest": {
+    "buy": "Ich möchte kaufen",
+    "sell": "Ich möchte verkaufen"
+  }
+}

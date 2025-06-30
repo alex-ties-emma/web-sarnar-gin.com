@@ -7,13 +7,16 @@
 @import "includes/footer";
 @import "includes/header";
 @import "includes/fonts";
+@import "includes/menu";
 
-@import 'variables/dimensions';
+@import "includes/dimensions";
+
 
 body {
   margin: 0;
   font-size: 62.5%;
   font-family: 'Funnel Display', sans-serif;
+  background: #000;
 }
 
 .eds-section-wrapper {
@@ -23,14 +26,22 @@ body {
     }
   }
 }
+
 @media #{$mqMaxLaptop} {
 
   body {
     font-size: 56.25%;
   }
 }
+
 @media #{$mqMaxTablet} {
   body {
     font-size: 56.25%;
   }
 }
+
+.eds-section--spacing-top {
+  margin-top: 15em;
+
+}
+

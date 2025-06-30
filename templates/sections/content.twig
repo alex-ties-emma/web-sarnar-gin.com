@@ -1,3 +1,5 @@
-<div class="eds-section-wrapper">
+{% set excludeItems = getPageLanguageContent(grabPageLanguage(page))|filter(x => x.elementDefinition.handle == 'vista')|length %}
+
+<div class="eds-section  {{ excludeItems == 0 ? 'eds-section--spacing-top' : '' }}">
     {{ renderContent() }}
 </div>

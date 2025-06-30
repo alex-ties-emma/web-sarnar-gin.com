@@ -1,0 +1,23 @@
+{
+  "labels": {
+    "privacy": "I hereby accept the privacy policy",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "comment": "I am interested in your offer and would like to make an appointment.",
+    "send": "Contact seller",
+    "sending": "Request will be sent...",
+    "request": "Non-binding enquiry",
+    "success": "The request has been sent."
+  },
+  "errors": {
+    "privacy": "The privacy policy must be accepted.",
+    "firstName": "First name is a required field.",
+    "lastName": "LastName is a required field.",
+    "email": "Email is a required field.",
+    "phone": "Your phone number is a required field.",
+    "comment": "",
+    "send": ""
+  }
+}

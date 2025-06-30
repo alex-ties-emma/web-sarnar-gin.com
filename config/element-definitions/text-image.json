@@ -1,4 +1,7 @@
 {
+    "@type": "content_element_definition",
+    "@id": "\/cms\/api\/content_element_definitions\/5cae6f34-ced6-4987-91ae-daf06b0fae70",
+    "uuid": "5cae6f34-ced6-4987-91ae-daf06b0fae70",
     "highlighting": 0,
     "hidden": 0,
     "name": "Text Image",
@@ -21,7 +24,7 @@
                 "label": "Image Alignment",
                 "options": [
                     {
-                        "label": "Left",
+                        "label": "Kruez",
                         "value": "eds-text-image--align-v1"
                     },
                     {
@@ -37,11 +40,11 @@
                 "label": "Decorations",
                 "options": [
                     {
-                        "label": "Left",
+                        "label": "Kreuz",
                         "value": "eds-text-image--decorations-1"
                     },
                     {
-                        "label": "Right",
+                        "label": "Band",
                         "value": "eds-text-image--decorations-2"
                     }
                 ]

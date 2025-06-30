@@ -43,7 +43,9 @@
   "scripts": {
     "style": "node_modules/.bin/sass ./assets/style/:./public/style --no-source-map --style compressed && postcss ./public/style/*.css --replace --config ./config/postcss.config.js ",
     "javascript": "node_modules/.bin/webpack --config config/webpack.config.js",
-    "build": "npm run style && npm run javascript"
+    "build": "npm run style && npm run javascript",
+    "import_elements": "ddev exec vendor/bin/cms sync:site-configurations && ddev exec vendor/bin/cms sync:page-definitions && ddev exec vendor/bin/cms sync:element-definitions"
+
   },
   "browserslist": [
     "> 1%",

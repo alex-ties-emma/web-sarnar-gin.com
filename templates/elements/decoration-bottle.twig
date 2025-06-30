@@ -1,8 +1,32 @@
 <div class="eds-panorama">
-    <div class="eds-panorama__wrapper">
+    <div class="eds-panorama__wrapper eds-width--c8">
 
-        <div class="eds-panorama__text">
-            <span>{{ content.text }}</span>
+        <div class="eds-panorama__content">
+
+            <div class="eds-panorama__deco">
+                <span class="eds-icon eds-icon--croce"></span>
+                <span class="eds-icon eds-icon--croce"></span>
+                <span class="eds-icon eds-icon--croce"></span>
+            </div>
+
+            <div class="eds-panorama__text">
+
+                {% for line in content.text|split('<br>') %}
+
+                    <div class="eds-vista__hero-line">
+                        <span>{{ line|replace({'Gin': '<b>Gin</b>'})|raw }}</span>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+            <div class="eds-panorama__deco">
+                <span class="eds-icon eds-icon--croce"></span>
+                <span class="eds-icon eds-icon--croce"></span>
+                <span class="eds-icon eds-icon--croce"></span>
+            </div>
+
         </div>
 
         <div class="eds-panorama__image">

@@ -1,5 +1,5 @@
 <template>
-  <div class="eds-button eds-button--white">
+  <div class="eds-button eds-button--red">
     <span>{{ label }}</span>
   </div>
 </template>

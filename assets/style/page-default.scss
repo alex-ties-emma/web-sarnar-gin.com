@@ -8,6 +8,7 @@
 @import "includes/header";
 @import "includes/fonts";
 @import "includes/menu";
+@import "includes/form";
 
 @import "includes/dimensions";
 
@@ -16,7 +17,42 @@ body {
   margin: 0;
   font-size: 62.5%;
   font-family: 'Funnel Display', sans-serif;
-  background: #000;
+}
+
+.eds-content-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.eds-background {
+  position: absolute;
+  z-index: -1;
+
+  &__item {
+    background-image: url(/assets/imagine-sfondo.jpg);
+    height: 200vh;
+    position: relative;
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: -40vh;
+
+    &:not(:first-child) {
+      mask-image: linear-gradient(transparent, #000 20%);
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      background-color: #252626;
+      opacity: 0.75;
+
+    }
+  }
+
 }
 
 .eds-section-wrapper {
@@ -24,6 +60,30 @@ body {
     &:not(.eds-vista) {
       margin-top: 10em;
     }
+  }
+}
+
+.eds-button {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 1em 4em;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &.eds-button--red {
+    border-color: #be1824;
+    &:hover {
+      background-color: rgba(#be1824, 0.2);
+    }
+  }
+
+  span {
+    font-family: 'Gloria Hallelujah', sans-serif;
+    font-size: 2em;
+    color: white;
   }
 }
 

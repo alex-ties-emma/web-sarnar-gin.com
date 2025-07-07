@@ -1,15 +1,29 @@
 {{ requireJs('main.bundle', 2) }}
 <body>
-{% include 'includes/header.twig' %}
-{% include 'includes/menu.twig' %}
+<div class="eds-content-wrapper">
+    {% include 'includes/header.twig' %}
+    {% include 'includes/menu.twig' %}
 
-<main class="eds-section">
-    {{ renderSection('content') }}
-</main>
+    <div class="eds-background">
 
-<footer>
-    {% include 'includes/footer.twig' %}
-    {% include 'includes/legal-menu.twig' %}
-    {% include 'includes/tracking-banner.twig' %}
-</footer>
+        {% for i in 0..10 %}
+            <div class="eds-background__item">
+
+            </div>
+        {% endfor %}
+
+
+    </div>
+
+    <main class="eds-section">
+        {{ renderSection('content') }}
+    </main>
+
+    <footer>
+        {% include 'includes/footer.twig' %}
+        {% include 'includes/legal-menu.twig' %}
+        {% include 'includes/tracking-banner.twig' %}
+    </footer>
+</div>
+
 </body>

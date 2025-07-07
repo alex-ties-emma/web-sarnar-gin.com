@@ -3,7 +3,6 @@ $logo-color: #fff;
 $text-color: #fff;
 
 .eds-legal-menu {
-  background-color: $background-color;
 
   &__wrapper {
     display: flex;
@@ -14,6 +13,10 @@ $text-color: #fff;
       color: $logo-color;
       font-size: 1.3em;
     }
+  }
+
+  &__credit img {
+    height: 2em;
   }
 
   &__credit {

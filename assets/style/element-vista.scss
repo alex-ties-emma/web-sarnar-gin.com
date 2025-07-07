@@ -17,6 +17,11 @@
   flex: 1;
 }
 
+.eds-vista__hero-image img {
+  position: absolute;
+  width: 16em;
+}
+
 .eds-vista__hero-line span {
   font-size: 9em;
   color: white;
@@ -69,4 +74,26 @@
 
 .eds-vista__intro-text:nth-child(1) .eds-vista__intro-text-headline {
   margin-top: auto;
+}
+.eds-vista__fly-image {
+
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.eds-vista__fly-image-ginepro img {
+  width: 46em;
+}
+.eds-vista__fly-image-rosa-canina img {
+  width: 40em;
+}
+.eds-vista__fly-image-gin {
+  img {
+    width: 22em;
+
+  }
 }

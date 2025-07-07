@@ -2,6 +2,7 @@
 .eds-contact__header {
   color: white;
   font-family: 'Instrument Serif', serif;
+  margin-bottom: 5em;
 }
 
 .eds-contact__header span {
@@ -10,11 +11,13 @@
 
 .eds-contact__wrapper {
   display: flex;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .eds-contact__content {
   flex: 4;
-  padding: 0 2em;
+  padding: 0 4em 8em 4em;
 }
 
 .eds-contact__image {

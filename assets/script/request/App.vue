@@ -1,6 +1,6 @@
 <template>
   <div class="eds-form">
-    <div class="eds-form-grid --columns-2">
+    <div class="eds-form-grid --columns-1">
       <form-input
           v-for="item in ['firstName', 'lastName', 'email', 'phone']"
           :key="item"
@@ -21,29 +21,7 @@
           @click="resetErrors"
       />
     </div>
-    <div class="eds-form-grid --columns-1">
-      <form-radiobox
-          :required="required.includes('client_type')"
-          :error="errors.client_type"
-          :options="[
-              {
-                value: 'public_administration',
-                label: t('labels.public_administration')
-              },
-              {
-                value: 'organization',
-                label: t('labels.organization')
-              },
-              {
-                value: 'private',
-                label: t('labels.private')
-              }
-          ]"
-          v-model="value.client_type"
-          @click="resetErrors"
-      />
-    </div>
-    <div class="eds-form-flex --flex-1">
+    <div class="eds-form-flex eds-form-flex--margin-bottom">
       <form-checkbox
           v-model="value.privacy"
           :label="t('labels.privacy')"
@@ -51,7 +29,10 @@
           :errorString="t('errors.privacy')"
           @click="resetErrors"
       />
+    </div>
+    <div class="eds-form-flex">
       <form-button :label="t('labels.request')" @click="submit"/>
+
     </div>
     <div class="eds-form__success --orange" v-if="success === 1">
       <div class="eds-form__success-content">

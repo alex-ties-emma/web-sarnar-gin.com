@@ -1,4 +1,6 @@
 import SimpleLightbox from "simplelightbox";
+import bindRequest from "./request/request.js";
+import {animateVista} from "./animations.js";
 
 // vh for adaptive viewport heights
 let vh = window.innerHeight * 0.01;
@@ -14,6 +16,10 @@ window.addEventListener('load', function () {
 
     // Enable lightbox for all eds-lbox--enabled elements
     const simpleLightbox = new SimpleLightbox('.eds-lbox--enabled');
+
+    bindRequest();
+
+    animateVista();
 });
 
 // Tracking banner

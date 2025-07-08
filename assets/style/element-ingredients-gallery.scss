@@ -30,7 +30,9 @@
 }
 
 
-
+.eds-ingredients-gallery__item {
+  overflow: hidden;
+}
 .eds-ingredients-gallery__item:nth-child(3n + 2) {
   transform: translateY(16em);
 }

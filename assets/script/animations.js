@@ -1,9 +1,12 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import CustomEase from "gsap/CustomEase";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export function animateVista() {
+
+    document.querySelector('.eds-vista').classList.remove('invisible');
 
     let heroImageBoundingRect = document.querySelector('.eds-vista__hero-image').getBoundingClientRect();
     let heroEndBoundingRect = document.querySelector('.eds-vista__intro-spacer').getBoundingClientRect();
@@ -27,7 +30,49 @@ export function animateVista() {
         x: pixelEndPositionGinX,
         y: pixelEndPositionGinY,
     });
+    for (let i = 0; i < 4; i++) {
+        gsap.fromTo(".eds-vista__hero-line:nth-child(" + i + ")", {
 
+            opacity: 0,
+            scale: 0.9,
+            translateY: '4em',
+            translateX: '4em',
+        }, {
+            delay: 0.2 * i,
+            duration: 2,
+            ease: CustomEase.create("custom", "M0,0 C0,0.782 0.516,1 1,1 "),
+            opacity: 1,
+            scale: 1,
+            translateY: 0,
+            translateX: 0,
+        })
+    }
+
+    for (let i = 0; i < 3; i++) {
+        let item = document.querySelector('.eds-vista__intro-wrapper').children[i];
+        gsap.fromTo(item, {
+
+            opacity: 0,
+            scale: 0.9,
+            translateY: '2em',
+            translateX: '2em',
+        }, {
+            delay: 1 + (0.2 * i),
+            duration: 2,
+            ease: CustomEase.create("custom", "M0,0 C0,0.782 0.516,1 1,1 "),
+            opacity: 1,
+            scale: 1,
+            translateY: 0,
+            translateX: 0,
+        })
+    }
+
+    gsap.fromTo(".eds-vista", {
+        opacity: 0
+    }, {
+        opacity: 1,
+        duration: 0.75
+    })
 
     gsap.fromTo(".eds-vista__fly-image-gin", {
         x: pixelStartPositionGinX,
@@ -50,6 +95,8 @@ export function animateVista() {
     let pixelStartPositionGineproX = pixelStartPositionGinX + 170;
     let pixelStartPositionGineproY = pixelStartPositionGinY + 20;
 
+
+
     let decoScrollTrigger = {
         trigger: ".eds-vista",
         start: "top top",
@@ -61,6 +108,7 @@ export function animateVista() {
         x: pixelStartPositionFlowerX,
         y: pixelStartPositionGinY,
         opacity: 1,
+        scale: 1,
         rotate: '-20deg'
     }, {
         opacity: 0,
@@ -73,6 +121,7 @@ export function animateVista() {
         x: pixelStartPositionGineproX,
         y: pixelStartPositionGineproY,
         opacity: 1,
+        scale: 1,
         rotate: '-14deg'
     }, {
         opacity: 0,

@@ -35,10 +35,6 @@ module.exports = {
                             ['@babel/preset-env', { targets: "defaults" }]
                         ],
                         plugins: [
-                            '@babel/plugin-transform-nullish-coalescing-operator',
-                            '@babel/plugin-syntax-nullish-coalescing-operator',
-                            '@babel/plugin-syntax-optional-chaining',
-                            '@babel/plugin-transform-optional-chaining'
                         ]
                     }
                 }

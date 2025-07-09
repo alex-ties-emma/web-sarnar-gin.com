@@ -146,7 +146,7 @@ export function animateVista() {
         y: pixelStartPositionBaccheY,
     }, {
         x: pixelStartPositionBaccheX,
-        y: pixelStartPositionBaccheY - 20,
+        y: pixelStartPositionBaccheY - 40,
 
         scrollTrigger: decoScrollTrigger2
     });
@@ -156,7 +156,7 @@ export function animateVista() {
         y: pixelStartPositionRamettoY
     }, {
         x: pixelStartPositionBaccheX,
-        y: pixelStartPositionRamettoY - 30,
+        y: pixelStartPositionRamettoY - 50,
 
         scrollTrigger: decoScrollTrigger2
     });

@@ -19,9 +19,25 @@
       row-gap: 1em;
       margin-bottom: 2em;
     }
+
+    &--half-width {
+      max-width: 50%;
+    }
   }
 
   .eds-input {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: '';
+      height: 1px;
+      background-color: #BE1824;
+    }
+
 
     &.eds-input--error {
       input, textarea, select {
@@ -59,7 +75,6 @@
       font-size: 1.6em;
       resize: vertical;
       border: none;
-      border-bottom: 1px solid #BE1824;
       font-weight: normal;
 
       &::placeholder {

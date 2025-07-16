@@ -2,7 +2,16 @@
     <div class="eds-vista-text__wrapper">
 
         <div class="eds-vista-text__content eds-width--c8">
-            <h1>{{ content.textarea|raw }}</h1>
+
+            {% for line in content.text|split('<br>') %}
+
+                <div class="eds-vista-text__hero-line">
+                    <span>{{ line|replace({'Gin': '<b>Gin</b>'})|raw }}</span>
+                </div>
+
+            {% endfor %}
+
+
         </div>
 
     </div>

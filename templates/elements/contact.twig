@@ -5,7 +5,10 @@
 
             <div class="eds-contact__main">
                 <div class="eds-contact__header">
-                    <span>{{ content.headline }}</span>
+
+                    {% for line in content.headline|split('<br>') %}
+                        <span>{{ line }}</span>
+                    {% endfor %}
                 </div>
 
                 <div id="request">

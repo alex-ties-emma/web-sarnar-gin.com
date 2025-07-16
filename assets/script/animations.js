@@ -64,6 +64,11 @@ export function animateVista() {
             scale: 1,
             translateY: 0,
             translateX: 0,
+
+            scrollTrigger: {
+                trigger: '.eds-vista__intro-wrapper',
+                start: 'top 90%'
+            }
         })
     }
 
@@ -133,8 +138,7 @@ export function animateVista() {
         trigger: ".eds-vista",
         start: "top top",
         end: "bottom center",
-        scrub: true,
-        markers: true // optional for debugging
+        scrub: true
     };
 
     let pixelStartPositionBaccheY = introTextBoundingRect.y + introTextBoundingRect.height - 50;
@@ -161,5 +165,87 @@ export function animateVista() {
         scrollTrigger: decoScrollTrigger2
     });
 
+
+}
+
+export function animateTextVista() {
+    for (let i = 0; i < 4; i++) {
+        gsap.fromTo(".eds-vista-text__hero-line:nth-child(" + i + ")", {
+
+            opacity: 0,
+            scale: 0.9,
+            translateY: '4em',
+            translateX: '4em',
+        }, {
+            delay: 0.2 * i,
+            duration: 2,
+            ease: CustomEase.create("custom", "M0,0 C0,0.782 0.516,1 1,1 "),
+            opacity: 1,
+            scale: 1,
+            translateY: 0,
+            translateX: 0,
+        })
+    }
+}
+
+export function animateTextImage() {
+
+
+    let scrollTrigger = {
+        trigger: ".eds-text-image",
+        start: "top 75%",
+        markers: true
+    }
+
+    gsap.fromTo('.eds-text-image .eds-text-image__decorations', {
+        opacity: 0,
+        translateY: '1.5em'
+    }, {
+        opacity: 1,
+        translateY: '0',
+        ease: 'power2.out',
+        duration: 0.8,
+        delay: 0.25,
+        scrollTrigger: scrollTrigger
+    })
+
+
+    gsap.fromTo('.eds-text-image .eds-text-image__main-text', {
+        opacity: 0,
+        scale: 0.9,
+        translateY: '4em',
+        translateX: '4em',
+    }, {
+        delay: 0.2 * i,
+        duration: 2,
+        ease: CustomEase.create("custom", "M0,0 C0,0.782 0.516,1 1,1 "),
+        opacity: 1,
+        scale: 1,
+        translateY: 0,
+        translateX: 0,
+        scrollTrigger: scrollTrigger
+    })
+
+
+    gsap.fromTo('.eds-text-image .eds-text-image__image', {
+        opacity: 0
+    }, {
+        opacity: 1,
+        ease: 'power2.out',
+        duration: 0.8,
+        delay: 0.25,
+        scrollTrigger: scrollTrigger
+    })
+
+
+    gsap.fromTo('.eds-text-image .eds-text-image__image img', {
+        scale: 1.05,
+    }, {
+        scale: 1,
+        ease: 'power2.out',
+        duration: 0.8,
+        delay: 0.25,
+        scrollTrigger: scrollTrigger
+    })
 
 }

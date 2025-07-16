@@ -1,6 +1,6 @@
 <template>
   <div class="eds-form">
-    <div class="eds-form-grid --columns-1">
+    <div class="eds-form-grid --columns-1 --half-width">
       <form-input
           v-for="item in ['firstName', 'lastName', 'email', 'phone']"
           :key="item"

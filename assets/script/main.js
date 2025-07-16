@@ -1,6 +1,6 @@
 import SimpleLightbox from "simplelightbox";
 import bindRequest from "./request/request.js";
-import {animateVista} from "./animations.js";
+import {animateVista, animateTextImage} from "./animations.js";
 
 // vh for adaptive viewport heights
 let vh = window.innerHeight * 0.01;
@@ -20,6 +20,8 @@ window.addEventListener('load', function () {
     bindRequest();
 
     animateVista();
+
+    animateTextImage();
 });
 
 // Tracking banner

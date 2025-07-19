@@ -33,9 +33,20 @@
 .eds-ingredients-gallery__item {
   overflow: hidden;
 }
+
 .eds-ingredients-gallery__item:nth-child(3n + 2) {
   transform: translateY(16em);
 }
+
 .eds-ingredients-gallery__item:nth-child(3n + 3) {
   transform: translateY(8em);
+}
+
+.eds-ingredients-gallery__item-image {
+  display: block;
+}
+
+.eds-ingredients-gallery__item-image-wrapper {
+  background-color: #0f0f0fc9;
+  display: block;
 }

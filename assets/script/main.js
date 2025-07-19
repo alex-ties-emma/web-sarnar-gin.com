@@ -1,10 +1,19 @@
 import SimpleLightbox from "simplelightbox";
 import bindRequest from "./request/request.js";
-import {animateVista, animateTextImage} from "./animations.js";
+import {
+    animateVista,
+    animateTextImage,
+    animateTextVista,
+    animateDividingTitle,
+    animateContact,
+    animateIngredients,
+    animateWhereToBuy
+} from "./animations.js";
 
 // vh for adaptive viewport heights
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 
 window.addEventListener('load', function () {
 
@@ -20,8 +29,17 @@ window.addEventListener('load', function () {
     bindRequest();
 
     animateVista();
+    animateTextVista();
 
     animateTextImage();
+
+    animateDividingTitle();
+
+    animateContact();
+
+    animateIngredients();
+
+    animateWhereToBuy();
 });
 
 // Tracking banner
@@ -45,7 +63,7 @@ document.querySelector('.eds-tracking-banner__button--deny').addEventListener('c
     localStorage.setItem('tracking-enabled', "0");
     document.querySelector('.eds-tracking-banner').classList.add('eds-tracking-banner--hidden');
 });
-if(document.querySelector('.eds-tracking-banner__button-open')) {
+if (document.querySelector('.eds-tracking-banner__button-open')) {
     document.querySelector('.eds-tracking-banner__button-open').addEventListener('click', () => {
         document.querySelector('.eds-tracking-banner').classList.remove('eds-tracking-banner--hidden');
     });
@@ -53,9 +71,9 @@ if(document.querySelector('.eds-tracking-banner__button-open')) {
 
 // add and remove static class from header when scrolling up
 let lastScrollTop = 0;
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
     const st = window.pageYOffset || document.documentElement.scrollTop;
-    if (st > lastScrollTop || st < 200){
+    if (st > lastScrollTop || st < 200) {
         document.querySelector('.eds-header').classList.remove('eds-header--static');
     } else {
         document.querySelector('.eds-header').classList.add('eds-header--static');

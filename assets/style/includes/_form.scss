@@ -20,7 +20,7 @@
       margin-bottom: 2em;
     }
 
-    &--half-width {
+    &.--half-width {
       max-width: 50%;
     }
   }
@@ -98,6 +98,10 @@
     &--margin-bottom {
       margin-bottom: 2em;
     }
+    &--margin-top {
+      margin-bottom: 2em;
+    }
+
 
     &.--flex-1 {
       justify-content: space-between;

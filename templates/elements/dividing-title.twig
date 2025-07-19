@@ -1,7 +1,12 @@
-<div class="eds-dividing-title {{ content.spacing_bottom }}">
+<div class="eds-dividing-title {{ content.spacing_bottom }} invisible">
     <div class="eds-dividing-title__wrapper">
         <div class="eds-dividing-title__title">
-            <h2><span>{{ content.headline }}</span></h2>
+            <h2>
+                {% for char in content.headline|split('') %}
+                    <span>{{ char }}</span>
+
+                {% endfor %}
+            </h2>
         </div>
     </div>
 </div>

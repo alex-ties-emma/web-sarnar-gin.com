@@ -30,7 +30,7 @@
           @click="resetErrors"
       />
     </div>
-    <div class="eds-form-flex">
+    <div class="eds-form-flex eds-form-flex--margin-top">
       <form-button :label="t('labels.request')" @click="submit"/>
 
     </div>

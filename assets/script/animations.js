@@ -261,7 +261,6 @@ export function animateTextImage() {
 
 }
 
-
 export function animateDividingTitle() {
 
 
@@ -300,7 +299,6 @@ export function animateDividingTitle() {
 
 }
 
-
 export function animateContact() {
     if (document.querySelector('.eds-contact')) {
 
@@ -309,8 +307,7 @@ export function animateContact() {
 
             let scrollTrigger = {
                 trigger: item,
-                start: "top 75%",
-                markers: true
+                start: "top 75%"
             }
 
             for (let i = 0; i < 4; i++) {
@@ -371,8 +368,7 @@ export function animateIngredients() {
 
             let scrollTrigger = {
                 trigger: item,
-                start: "top 75%",
-                markers: true
+                start: "top 75%"
             }
 
             let panels = item.querySelectorAll('.eds-ingredients-gallery__item');
@@ -422,21 +418,20 @@ export function animateIngredients() {
 export function animateWhereToBuy() {
 
 
-    if (document.querySelector('.eds-where-to-buy')) {
-        document.querySelector('.eds-where-to-buy').classList.remove('invisible');
+    if (document.querySelector('.eds-footer')) {
+        document.querySelector('.eds-footer').classList.remove('invisible');
 
-        document.querySelectorAll('.eds-where-to-buy').forEach(item => {
+        document.querySelectorAll('.eds-footer').forEach(item => {
             item.classList.remove('invisible');
 
             let scrollTrigger = {
                 trigger: item,
-                start: "top 75%",
-                markers: true
+                start: "top 75%"
             }
 
-            let panels = item.querySelectorAll('.eds-where-to-buy__item');
+            let panels = item.querySelectorAll('.eds-footer__item');
 
-            gsap.fromTo(item.querySelector('.eds-where-to-buy__image'), {
+            gsap.fromTo(item.querySelector('.eds-footer__image'), {
 
                 opacity: 0,
             }, {
@@ -448,7 +443,7 @@ export function animateWhereToBuy() {
             for (let i = 0; i < panels.length; i++) {
                 let panel = panels[i];
 
-                gsap.fromTo(panel.querySelector('.eds-where-to-buy__title'), {
+                gsap.fromTo(panel.querySelector('.eds-footer__title'), {
 
                     opacity: 0,
                     scale: 0.9,
@@ -464,7 +459,7 @@ export function animateWhereToBuy() {
                     translateX: 0,
                     scrollTrigger: scrollTrigger
                 })
-                gsap.fromTo(panel.querySelector('.eds-where-to-buy__description'), {
+                gsap.fromTo(panel.querySelector('.eds-footer__description'), {
 
                     opacity: 0,
                 }, {
@@ -479,4 +474,29 @@ export function animateWhereToBuy() {
         });
     }
 
+}
+
+export function animateFooter() {
+    if (document.querySelector('.eds-footer')) {
+
+        document.querySelectorAll('.eds-footer').forEach(item => {
+            item.classList.remove('invisible');
+
+            let scrollTrigger = {
+                trigger: item,
+                start: "top 100%",
+                markers: true
+            }
+
+            gsap.fromTo(item, {
+
+                opacity: 0,
+            }, {
+                delay: 0.2,
+                opacity: 1,
+                scrollTrigger: scrollTrigger
+            })
+
+        });
+    }
 }

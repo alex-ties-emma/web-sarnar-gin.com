@@ -1,13 +1,12 @@
+@import 'variables/variables';
+
 .eds-tracking-banner {
   position: fixed;
-  bottom: 0;
+  bottom: 0.5em;
   left: 0;
   right: 0;
-  background-color: #ffffffcc;
-  color: black;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 6px rgb(0 0 0 / 10%);
   z-index: 100000;
+  pointer-events: none;
 
   &--hidden {
     display: none;
@@ -17,14 +16,25 @@
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
-    padding: 16px 10px 12px;
+    padding: 1.2em 1.2em 1.2em 3em;
+    border-radius: 50em;
+    color: white;
+    background: #232323;
+    backdrop-filter: blur(8px);
+    width: calc(100% - 2em);
+    box-sizing: border-box;
+    border: 1px solid rgb(255 255 255 / 20%);
+    pointer-events: all;
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
   }
 
   &__explainer {
+    flex: 1;
     padding: 0 10px 0 0;
+    display: flex;
+    align-items: center;
     @media screen and (max-width: 768px) {
       padding: 0 0 10px 0;
     }
@@ -40,13 +50,19 @@
   }
 
   &__button {
-    padding: 8px 20px;
-    border-radius: 8px;
-    background-color: whitesmoke;
-    border: 1px solid rgb(0 0 0 / 10%);
+
+    background-color: transparent;
+    border-radius: 15em;
+    padding: 0.9em 3em;
     cursor: pointer;
     margin: 3px;
     white-space: nowrap;
+    transition: background-color 0.3s;
+    border: 1px solid;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 
     span {
       font-size: 1.6em;
@@ -55,27 +71,21 @@
     &:first-child {
       margin-right: 10px;
     }
-
-    &:hover {
-      background-color: #f0f0f0;
-    }
   }
 
   &__explainer span {
     font-size: 1.4em;
   }
-
-  &.eds-tracking-banner--dark {
-    color: white;
-    background-color: #00000080;
-
-    .eds-tracking-banner__button {
-      background-color: #545454;
-
-      &:hover {
-        background-color: #474747;
-      }
-    }
-  }
 }
 
+@media #{$mqMaxMobileL} {
+  .eds-tracking-banner__container {
+    border-radius: 2em;
+    margin: 1em;
+  }
+  .eds-tracking-banner__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

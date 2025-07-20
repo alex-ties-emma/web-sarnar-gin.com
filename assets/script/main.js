@@ -7,7 +7,8 @@ import {
     animateDividingTitle,
     animateContact,
     animateIngredients,
-    animateWhereToBuy
+    animateWhereToBuy,
+    animateFooter
 } from "./animations.js";
 
 // vh for adaptive viewport heights
@@ -40,6 +41,8 @@ window.addEventListener('load', function () {
     animateIngredients();
 
     animateWhereToBuy();
+
+    animateFooter();
 });
 
 // Tracking banner
